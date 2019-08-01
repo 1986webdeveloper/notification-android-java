@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Notification</string>
+    <string name="production">Production</string>
+    <string name="qa">QA</string>
+</resources>
