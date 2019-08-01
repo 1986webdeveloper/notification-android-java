@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
             tvAppMode.setText(getString(R.string.production));
         }
 
-        //Task 2 Task 2 Check timer is started or not if the timer is not started then start background service with 5 min timer
+        //Task 2 Check timer is started or not if the timer is not started then start background service with 5 min timer
         if (!PrefUtils.getBoolean(this, Constants.PREF_ON_STARTED, false)) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                 startForegroundService(new Intent(this, BackgroundService.class));
